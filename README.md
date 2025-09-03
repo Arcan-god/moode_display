@@ -1,4 +1,4 @@
-![Project Banner](images/project header.png)
+![Project Banner](images/project_header.png)
 
 # Moode Audio Display for Pico Display Pack 2.8"
 
