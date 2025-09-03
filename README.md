@@ -20,9 +20,14 @@ The project uses Pimoroni's bitmap8 font by default, though other font options a
 
 The Pico Display Pack includes tactile buttons, but they're not used in this version - the focus is purely on displaying information clearly and efficiently.
 
+Development and testing was carried out using the Raspberry Pi Pico W. The code should be compatible with the Pico 2W as well.
+
 Thanks for checking out the project! Also see my [numpad moode audio controller](https://github.com/mlake1/moode-numpad-controller).
 
-![tech features](images/display_technical_small.png)
+<div align="center">
+  <img src="images/display_technical_small.png" alt="tech_features">
+</div>
+<br>
 
 ## Features
 
@@ -39,7 +44,8 @@ Thanks for checking out the project! Also see my [numpad moode audio controller]
 
 ## Hardware Requirements
 
-- [Raspberry Pi Pico W](https://shop.pimoroni.com/products/raspberry-pi-pico-w)
+- [Raspberry Pi Pico W](https://www.raspberrypi.com/products/raspberry-pi-pico-2/)
+   Note: Development and testing using Raspberry Pi Pico W. The code should be compatible with the Pico 2W as well.
 - [Pimoroni Pico Display Pack 2.8"](https://shop.pimoroni.com/products/pico-display-pack-2-8?variant=42047194005587)
 - [Moode Audio](https://moodeaudio.org/) system running on a seperate device elsewhere on the network
 
@@ -171,6 +177,7 @@ This project is open source. Please check the licenses of the dependencies (Micr
 ## Acknowledgments
 
 [Moode Audio](https://moodeaudio.org/) Thanks to Tim and everyone else @ Moode for the fantastastic software
+[Moode Audio Forums](https://moodeaudio.org/forum/)
 
 ## Hardware Safety
 This project involves electronic components. Users assume all responsibility
@@ -181,6 +188,9 @@ This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
+
+## Trademarks
+Raspberry Pi is a trademark of Raspberry Pi Ltd.
 
 ## Licence
 This project is licenced under the GNU General Public License v3.0.
