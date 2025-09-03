@@ -164,7 +164,7 @@ This project is open source. Please check the licenses of the dependencies (Micr
 
 ## Acknowledgments
 
-- [Moode Audio](https://moodeaudio.org/) Thanks to Tim and everyone else @ Moode for the fantastastic software
+[Moode Audio](https://moodeaudio.org/) Thanks to Tim and everyone else @ Moode for the fantastastic software
 
 ## Hardware Safety
 This project involves electronic components. Users assume all responsibility
