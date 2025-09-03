@@ -4,6 +4,8 @@
 
 A MicroPython-based display client that shows now-playing information from a Moode Audio system on a Raspberry Pi Pico with the Pimoroni Pico Display Pack 2.8".
 
+![display](images/display_radio.png)
+
 This is a standalone wireless display that shows what's currently playing on your Moode Audio system. The display connects to any Moode installation running elsewhere on your network and presents the current track or radio station in a clean, readable format.
 
 The project was created primarily for radio listening - it displays the station name prominently and when available, shows the current track information. For stations that don't provide track details, the display simply shows "Listening to Radio" so you always know it's working.
