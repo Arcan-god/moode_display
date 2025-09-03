@@ -6,9 +6,8 @@ A MicroPython-based display client that shows now-playing information from a Moo
 
 <div align="center">
   <img src="images/display_radio.png" alt="radio_display">
-  
 </div>
-
+<br>
 
 
 This is a standalone wireless display that shows what's currently playing on your Moode Audio system. The display connects to any Moode installation running elsewhere on your network and presents the current track or radio station in a clean, readable format.
