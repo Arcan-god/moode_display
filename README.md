@@ -4,11 +4,9 @@
 
 A MicroPython-based display client that shows now-playing information from a Moode Audio system on a Raspberry Pi Pico with the Pimoroni Pico Display Pack 2.8".
 
-![Pico Display Pack 2.8"](https://cdn.shopify.com/s/files/1/0174/1800/products/pico-display-pack-2-8-1_1024x1024.jpg?v=1646068819)
-
 This is a standalone wireless display that shows what's currently playing on your Moode Audio system. The display connects to any Moode installation running elsewhere on your network and presents the current track or radio station in a clean, readable format.
 
-The project was created primarily for radio listening - it displays the station name prominently and, when available, shows the current track information. For stations that don't provide track details, the display simply shows "Listening to Radio" so you always know it's working.
+The project was created primarily for radio listening - it displays the station name prominently and when available, shows the current track information. For stations that don't provide track details, the display simply shows "Listening to Radio" so you always know it's working.
 
 Power management is built-in: the display automatically sleeps when music stops to preserve the screen and save energy. Whilst sleeping, it checks for activity every 15 seconds, then switches to 5-second updates when music resumes. You can easily adjust these intervals in the code if needed.Text wrapping ensures nothing gets cut off, longer station names and track titles automatically flow to multiple lines. 
 
@@ -16,7 +14,9 @@ The project uses Pimoroni's bitmap8 font by default, though other font options a
 
 The Pico Display Pack includes tactile buttons, but they're not used in this version - the focus is purely on displaying information clearly and efficiently.
 
-Thanks for checking out the project! Also see my numpad moode audio controller: https://github.com/mlake1/moode-numpad-controller
+Thanks for checking out the project! Also see my [numpad moode audio controller] (https://github.com/mlake1/moode-numpad-controller)
+
+![tech features](images/display_technical.png)
 
 ## Features
 
@@ -60,7 +60,7 @@ Thanks for checking out the project! Also see my numpad moode audio controller: 
 
 3. **Upload files** to your Pico W:
    - `main.py` (the main display code)
-   - `secrets.py` (your configuration file)
+   - `secrets.py` (your wifi and moode ip configuration file)
 
 4. **Connect hardware**:
    - Attach the Pico Display Pack 2.8" to your Pico W
@@ -179,3 +179,5 @@ GNU General Public License for more details.
 ## Licence
 This project is licenced under the GNU General Public License v3.0.
 See the [LICENCE](LICENCE) file for details.
+
+![Project Footer](images/display_footer.png)
