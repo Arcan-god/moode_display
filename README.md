@@ -178,6 +178,6 @@ GNU General Public License for more details.
 
 ## Licence
 This project is licenced under the GNU General Public License v3.0.
-See the [LICENCE](LICENCE) file for details.
+See the [LICENSE](LICENSE) file for details.
 
 ![Project Footer](images/display_footer.png)
