@@ -14,9 +14,9 @@ The project uses Pimoroni's bitmap8 font by default, though other font options a
 
 The Pico Display Pack includes tactile buttons, but they're not used in this version - the focus is purely on displaying information clearly and efficiently.
 
-Thanks for checking out the project! Also see my [numpad moode audio controller] (https://github.com/mlake1/moode-numpad-controller)
+Thanks for checking out the project! Also see my [numpad moode audio controller](https://github.com/mlake1/moode-numpad-controller).
 
-![tech features](images/display_technical.png)
+![tech features](images/display_technical_small.png)
 
 ## Features
 
